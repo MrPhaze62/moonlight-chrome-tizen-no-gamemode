@@ -10,6 +10,8 @@
 ### Note
 As a non-developer with limited coding knowledge, I do my best to maintain the repository and address issues. If you encounter problems, please report them in the issue section. While I can't guarantee a solution, I will certainly investigate.
 
+THIS FORK IS BASED ON OneLiberty Moonlight port. All my fork does is simply disable gamemode on launch/stream. My reason is that it's simply too bright for my eyes.
+
 ## Getting Started
 To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/OneLiberty/moonlight-chrome-tizen#prerequisites) and follow the [Installation](https://github.com/OneLiberty/moonlight-chrome-tizen#installation) guide.
 
