@@ -7,6 +7,8 @@
 ## About
 [Moonlight for Tizen](https://moonlight-stream.org) is an open-source client for NVIDIA GameStream and [Sunshine](https://github.com/LizardByte/Sunshine). It enables streaming games from a powerful desktop to Samsung Smart TVs running Tizen OS 5.5 or higher. For more details, setup guides, or troubleshooting, visit the [Moonlight wiki](https://github.com/moonlight-stream/moonlight-docs/wiki).
 
+This fork simply just disables gamemode unlike Kyro and OneLiberty forks. If you wish to use gamemode while streaming, please use either of those forks.
+
 ### Note
 As a non-developer with limited coding knowledge, I do my best to maintain the repository and address issues. If you encounter problems, please report them in the issue section. While I can't guarantee a solution, I will certainly investigate.
 
@@ -27,7 +29,7 @@ Ensure Docker Desktop is running and close any resource-intensive applications.
 2. **Launch Docker Image**:
    - Run in Windows PowerShell:
      ```
-     docker run -it --rm ghcr.io/oneliberty/moonlight-chrome-tizen:samsung_wasm
+     docker run -it --rm ghcr.io/mrphaze62/moonlight-chrome-tizen-no-gamemode:samsung_wasm
      ```
 3. **Install the Application**:
    - Connect and install via Smart Development Bridge:
@@ -43,11 +45,6 @@ Ensure Docker Desktop is running and close any resource-intensive applications.
    - Revisit the `Apps` panel to turn off Developer mode and restart the TV.
 
 Moonlight should now be available under `Recent Apps` on your Samsung Smart TV.
-
-
->[!NOTE]
-> You can now install Moonlight via USB ! Check out the [release tab](https://github.com/OneLiberty/moonlight-chrome-tizen/releases) for more informations.
-
 
 ### Updating
 To update Moonlight:
