@@ -17,6 +17,8 @@ THIS FORK IS BASED ON OneLiberty Moonlight port. All my fork does is simply disa
 ## Getting Started
 To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/OneLiberty/moonlight-chrome-tizen#prerequisites) and follow the [Installation](https://github.com/OneLiberty/moonlight-chrome-tizen#installation) guide.
 
+## Read the pinned issue before getting started: https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode/issues/1
+
 ### Prerequisites
 You'll need:
 - Windows Subsystem for Linux (WSL 2) — [Installation Guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
