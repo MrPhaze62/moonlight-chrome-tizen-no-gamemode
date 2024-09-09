@@ -12,7 +12,7 @@ function loadProductInfos() {
     const model = window.tizen.systeminfo.getCapability('http://tizen.org/system/model_name') || "Not Available";
     const moonlightVersion = window.tizen.application.getAppInfo().version || "Not Available";
     const tizenVersion = window.tizen.systeminfo.getCapability('http://tizen.org/feature/platform.version') || "Not Available";
-    modelCodePlaceholder.innerText = `TV Model: ${model} ; Moonlight: v${moonlightVersion} ; Tizen: v${tizenVersion}`;
+    modelCodePlaceholder.innerText = `TV Model: ${model} ; Moonlight: v${moonlightVersion} ; Tizen: v${tizenVersion} ; GameMode is Disabled with this port`;
   }
 }
 
