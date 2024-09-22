@@ -23,9 +23,9 @@ WORKDIR /home/moonlight
 
 # Install Tizen Studio
 # get file: web-cli_Tizen_Studio_5.0_ubuntu-64.bin
-RUN wget -nv -O web-cli_Tizen_Studio_5.0_ubuntu-64.bin 'https://download.tizen.org/sdk/Installer/tizen-studio_5.0/web-cli_Tizen_Studio_5.0_ubuntu-64.bin'
+RUN wget --no-check-certificate -nv -O web-cli_Tizen_Studio_5.0_ubuntu-64.bin 'https://download.tizen.org/sdk/Installer/tizen-studio_5.0/web-cli_Tizen_Studio_5.0_ubuntu-64.bin'
 RUN chmod a+x web-cli_Tizen_Studio_5.0_ubuntu-64.bin
-RUN ./web-cli_Tizen_Studio_5.0_ubuntu-64.bin --accept-license /home/moonlight/tizen-studio
+RUN ./web-cli_Tizen_Studio_5.0_ubuntu-64.bin --accept-license /home/moonlight/tizen-studio 
 ENV PATH=/home/moonlight/tizen-studio/tools/ide/bin:/home/moonlight/tizen-studio/tools:${PATH}
 
 # Prepare Tizen signing cerficates
