@@ -7,12 +7,16 @@
 ## About
 [Moonlight for Tizen](https://moonlight-stream.org) is an open-source client for NVIDIA GameStream and [Sunshine](https://github.com/LizardByte/Sunshine). It enables streaming games from a powerful desktop to Samsung Smart TVs running Tizen OS 5.5 or higher. For more details, setup guides, or troubleshooting, visit the [Moonlight wiki](https://github.com/moonlight-stream/moonlight-docs/wiki).
 
-This fork simply just disables gamemode unlike Kyro and OneLiberty forks. If you wish to use gamemode while streaming, please use either of those forks.
+## This fork simply just disables gamemode unlike Kyro and OneLiberty forks. If you wish to use gamemode while streaming, please use either of those forks. Linked below:
+
+https://github.com/OneLiberty/moonlight-chrome-tizen - OneLiberty Fork. Has GameMode automatically enabled on stream by default.
+
+https://github.com/KyroFrCode/moonlight-chrome-tizen - KyroFrCode Original Fork. - Has GameMode enabled on stream by default.
 
 ### Note
 As a non-developer with limited coding knowledge, I do my best to maintain the repository and address issues. If you encounter problems, please report them in the issue section. While I can't guarantee a solution, I will certainly investigate.
 
-THIS FORK IS BASED ON OneLiberty Moonlight port. All my fork does is simply disable gamemode on launch/stream. My reason is that it's simply too bright for my eyes.
+## This fork is based OneLiberty Moonlight Port/Fork. All my fork does is simply disable gamemode on launch/stream. My reason is that it's simply too bright for my eyes. It will follow and add OneLiberty updates merged with this, just with gamemode disabled here.
 
 ## Getting Started
 To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/OneLiberty/moonlight-chrome-tizen#prerequisites) and follow the [Installation](https://github.com/OneLiberty/moonlight-chrome-tizen#installation) guide.
@@ -51,7 +55,11 @@ Moonlight should now be available under `Recent Apps` on your Samsung Smart TV.
 ### Updating
 To update Moonlight:
 1. Delete the existing app from your TV.
-2. Follow the installation instructions to install the latest version.
+2. Open PowerShell and run the following cmd in powershell 'docker pull ghcr.io/mrphaze62/moonlight-chrome-tizen-no-gamemode:samsung_wasm' to grab any new update from my fork without having to delete and reinstall the entire image.
+
+If you're using Kyro fork and you want to update his fork (Has GameMode enabled) and not use mine, run 'docker pull ghcr.io/oneliberty/moonlight-chrome-tizen:samsung_wasm' and follow his intructions to install it on his main page. (basically the same as the installation guide as above.
+
+3. Just follow the installation guide as above after running the powershell cmd to update either forks you choose to use.
 
 ## Changelogs
 View changes and updates in the [CHANGELOG](https://github.com/oneliberty/moonlight-chrome-tizen/blob/samsung_wasm/CHANGELOG.md).
