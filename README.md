@@ -57,7 +57,7 @@ To update Moonlight:
 1. Delete the existing app from your TV.
 2. Open PowerShell and run the following cmd in powershell 'docker pull ghcr.io/mrphaze62/moonlight-chrome-tizen-no-gamemode:samsung_wasm' to grab any new update from my fork without having to delete and reinstall the entire image.
 
-If you're using Kyro fork and you want to update his fork (Has GameMode enabled) and not use mine, run 'docker pull ghcr.io/oneliberty/moonlight-chrome-tizen:samsung_wasm' and follow his intructions to install it on his main page. (basically the same as the installation guide as above.
+If you're using OneLiberty fork and you want to update his fork (Has GameMode enabled) and not use mine, run 'docker pull ghcr.io/oneliberty/moonlight-chrome-tizen:samsung_wasm' and follow his intructions to install it on his main page. (basically the same as the installation guide as above.
 
 3. Just follow the installation guide as above after running the powershell cmd to update either forks you choose to use.
 
