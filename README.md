@@ -21,7 +21,7 @@ As a non-developer with limited coding knowledge, I do my best to maintain the r
 ## This fork is based OneLiberty Moonlight Port/Fork. All my fork does is simply disable gamemode on launch/stream. My reason is that it's simply too bright for my eyes. It will follow and add OneLiberty updates merged with this, just with gamemode disabled here.
 
 ## Getting Started
-To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#prerequisites) and follow the [Installation](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#installation) guide.
+To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#prerequisites) (The Prerequisites is only IF YOU PLAN ON INSTALLING VIA DOCKER OTHERWISE jump to the installation link which is much easier. ->) and follow the [Installation](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#installation) guide.
 
 Make sure to enable **Enable Developer Mode on Samsung Smart TV**:
 
