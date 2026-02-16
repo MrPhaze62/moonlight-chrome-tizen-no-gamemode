@@ -11,7 +11,9 @@
 
 https://github.com/OneLiberty/moonlight-chrome-tizen - OneLiberty Fork. Has GameMode automatically enabled on stream by default.
 
-https://github.com/KyroFrCode/moonlight-chrome-tizen - KyroFrCode Original Fork. - Has GameMode enabled on stream by default.
+https://github.com/KyroFrCode/moonlight-chrome-tizen - KyroFrCode Original Fork. - Has GameMode enabled on stream by default. (Kyro build is no longer recommended as it is outdated. but it is there. Use OneLiberty or other forks of moonlight tizen.)
+
+There are forks of Moonlight Tizen which you can find here: https://github.com/OneLiberty/moonlight-chrome-tizen/discussions/121 - Each with their own features. 
 
 ### Note
 As a non-developer with limited coding knowledge, I do my best to maintain the repository and address issues. If you encounter problems, please report them in the issue section. While I can't guarantee a solution, I will certainly investigate.
@@ -19,25 +21,51 @@ As a non-developer with limited coding knowledge, I do my best to maintain the r
 ## This fork is based OneLiberty Moonlight Port/Fork. All my fork does is simply disable gamemode on launch/stream. My reason is that it's simply too bright for my eyes. It will follow and add OneLiberty updates merged with this, just with gamemode disabled here.
 
 ## Getting Started
-To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/OneLiberty/moonlight-chrome-tizen#prerequisites) and follow the [Installation](https://github.com/OneLiberty/moonlight-chrome-tizen#installation) guide.
+To install Moonlight on your Samsung Smart TV, start by ensuring your setup meets the [Prerequisites](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#prerequisites) and follow the [Installation](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode?tab=readme-ov-file#installation) guide.
+
+Make sure to enable **Enable Developer Mode on Samsung Smart TV**:
+
+- Navigate to `Apps` panel, enter `12345` on the remote, turn on `Developer mode`, input your PC's IP, and restart the TV (by long pressing the power button).
 
 ## Read the pinned issue before getting started: https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode/issues/1
 
-### Prerequisites
+### Installation
+
+### **Using Samsung-Jellyfin-Installer (Recommended)**
+
+The easiest way to install Moonlight on your Samsung TV is with the [Samsung-Jellyfin-Installer](https://github.com/Jellyfin2Samsung/Samsung-Jellyfin-Installer):
+
+1. **Install the Installer:** Download and open the Samsung-Jellyfin-Installer on your PC.
+2. **Sign in:** Most TVs require a Samsung account to install apps. If needed, [create one here](https://account.samsung.com/).
+3. **Find Moonlight:** In the installer, go to **Release → Tizen Community**, then select **Moonlight-NoGame.wgt** (or **Moonlight.wgt** for [OneLiberty](https://github.com/OneLiberty/moonlight-chrome-tizen version which has Gamemode enabled on stream).
+4. **Connect your TV:** Your TV should appear in the installer. Select it and click **Download and Install**. Log in with your Samsung account if prompted.
+
+> **Tip:** You can also use the **Custom WGT File** option to install a `.wgt` file from your computer if needed.
+
+After installation, Moonlight will appear under `Recent Apps` on your Samsung Smart TV.
+
+#
+
+### **Using Docker (Advanced)**
+
+#### **Prerequisites**
+
 You'll need:
+
 - Windows Subsystem for Linux (WSL 2) — [Installation Guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
 - Docker Desktop — [Installation Guide](https://docs.docker.com/desktop/)
-Ensure Docker Desktop is running and close any resource-intensive applications.
+  Ensure Docker Desktop is running and close any resource-intensive applications.
 
-### Installation
-1. **Enable Developer Mode on Samsung Smart TV**:
-   - Navigate to `Apps` panel, enter `12345` on the remote, turn on `Developer mode`, input your PC's IP, and restart the TV.
-2. **Launch Docker Image**:
+
+#### **Installation**
+
+
+1. **Launch Docker Image**:
    - Run in Windows PowerShell:
      ```
      docker run -it --rm ghcr.io/mrphaze62/moonlight-chrome-tizen-no-gamemode:samsung_wasm
      ```
-3. **Install the Application**:
+2. **Install the Application**:
    - Connect and install via Smart Development Bridge:
      ```
      sdb connect YOUR_TV_IP
@@ -47,8 +75,8 @@ Ensure Docker Desktop is running and close any resource-intensive applications.
      ```
    - Replace `YOUR_TV_IP` and `YOUR_DEVICE_ID` with your TV's IP and Device ID respectively.
 
-4. **(Optional) Disable Developer Mode**:
-   - Revisit the `Apps` panel to turn off Developer mode and restart the TV.
+3. **(Optional) Disable Developer Mode**:
+   - Revisit the `Apps` panel to turn off Developer mode and restart the TV. - not needed to disable, would recommend to keep it on if you plan on installing more apps in the future.
 
 Moonlight should now be available under `Recent Apps` on your Samsung Smart TV.
 
