@@ -37,7 +37,7 @@ The easiest way to install Moonlight on your Samsung TV is with the [Samsung-Jel
 
 1. **Install the Installer:** Download and open the Samsung-Jellyfin-Installer on your PC.
 2. **Sign in:** Most TVs require a Samsung account to install apps. If needed, [create one here](https://account.samsung.com/).
-3. **Find Moonlight:** In the installer, go to **Release → Tizen Community**, then select **Moonlight-NoGame.wgt** (or **Moonlight.wgt** for [OneLiberty](https://github.com/OneLiberty/moonlight-chrome-tizen version which has Gamemode enabled on stream).
+3. **Find Moonlight:** In the installer, go to **Release → Tizen Community**, then select **Moonlight-NoGame.wgt** (or **Moonlight.wgt** for [OneLiberty](https://github.com/OneLiberty/moonlight-chrome-tizen) version which has Gamemode enabled on stream).
 4. **Connect your TV:** Your TV should appear in the installer. Select it and click **Download and Install**. Log in with your Samsung account if prompted.
 
 > **Tip:** You can also use the **Custom WGT File** option to install a `.wgt` file from your computer if needed.
